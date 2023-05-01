@@ -1,7 +1,5 @@
 import time
 
-# função que recebe outra função
-
 
 def meu_decorator(func):
     def wrapper(*args):
