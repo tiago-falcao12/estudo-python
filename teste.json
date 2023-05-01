@@ -1,0 +1,44 @@
+{
+    "debug": false,
+    "bip": "192.168.203.129/27",
+    "mtu": 1400,
+    "ipv6": false,
+    "dns": [
+        "172.17.71.192",
+        "172.30.110.26"
+    ],
+    "dns-opt": "options single-request-reopen",
+    "registry-mirrors": [],
+    "insecure-registries": [
+        "atf.intranet.bb.com.br:5001"
+    ],
+    "storage-driver": "overlay2",
+    "log-level": "warn",
+    "log-driver": "json-file",
+    "log-opts": {
+        "max-size": "10m",
+        "max-file": "5"
+    },
+    "default-address-pools": [
+        {
+            "scope": "local",
+            "base": "192.168.203.160/27",
+            "size": 27
+        },
+        {
+            "scope": "global",
+            "base": "192.168.203.192/27",
+            "size": 27
+        },
+        {
+            "scope": "swarm",
+            "base": "192.168.203.224/27",
+            "size": 27
+        },
+        {
+            "scope": "swarm-global",
+            "base": "10.1.203.0/27",
+            "size": 27
+        }
+    ]
+}
