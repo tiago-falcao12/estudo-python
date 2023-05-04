@@ -1,17 +1,17 @@
-from decoradores.decorador import meu_decorator
+from decorador import my_decorator
 
 
-@meu_decorator
+@my_decorator
 def soma(a: int, b: int) -> int:
     return a + b
 
 
-@meu_decorator
+@my_decorator
 def multiplica(a: int) -> int:
     return a * 2
 
 
-@meu_decorator
+@my_decorator
 def mensagem(msg: str) -> str:
     return f"{msg.upper()}"
 
